@@ -2,7 +2,7 @@ const stringClean = (string) => {
     let finalString = ""
     let stringArray = string.split("")
     for (let i = 0; i < stringArray.length; i++) {
-        if (!(stringArray[i] >= 0)) {
+        if (!(stringArray[i] >= 0 ) || stringArray[i] === ' ') {
             finalString += stringArray[i]
         }
     }
@@ -12,4 +12,5 @@ const stringClean = (string) => {
 
 }
 
-stringClean("holis88")
+stringClean("! !")
+console.log("! !")
